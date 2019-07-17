@@ -1,3 +1,4 @@
+require 'pry'
 # passengers = {
 # suite_a: "Amanda Presley", 
 # suite_b: "Seymour Hoffman", 
@@ -18,6 +19,7 @@ end
 
 def happy_birthday(birthday_kids)
   birthday_kids.each do |kids_name, age|
+    binding.pry
     puts "Happy Birthday #{kids_name}! You are now #{age} years old!"
   end
 end
